@@ -1,0 +1,34 @@
+# audio / video (datos pesados, no subir)
+videos/
+*.wav
+*.mp3
+*.mp4
+*.mov
+*.mkv
+
+# artefactos generados por el notebook
+*.npy
+*.pt
+*.pkl
+
+# LaTeX (archivos de compilación)
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# sistema
+.DS_Store
+
+# informe (se gestiona en Overleaf, no en el repo)
+informe/

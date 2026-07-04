@@ -46,8 +46,14 @@ pip install -r requirements.txt
 ## 3. Datos
 
 Las **anotaciones** ya están incluidas en `labels/`. El **audio** de los 5 partidos
-(`V006`–`V010`) no se versiona por su tamaño (ver `.gitignore`); debes obtenerlo aparte y
-colocarlo en una carpeta `videos/`:
+(`V006`–`V010`) es muy pesado (~1 GB en total, con archivos de hasta ~500 MB), por lo que
+**no se versiona** en el repositorio (ver `.gitignore`).
+
+**Descarga del audio:** los WAV están disponibles en la siguiente carpeta de Google Drive:
+
+<https://drive.google.com/drive/folders/1yD9EwBeLz4t3tJtQeFGarCt4vB3fL8Hu?usp=sharing>
+
+Descárgalos y colócalos en una carpeta `videos/` en la raíz del proyecto:
 
 ```
 videos/V006.wav ... videos/V010.wav   (mono, 16 kHz)
@@ -55,7 +61,7 @@ videos/V006.wav ... videos/V010.wav   (mono, 16 kHz)
 
 Los datos provienen del conjunto asociado al artículo base *Detection of Tennis Events from
 Acoustic Data* (MMSports 2019, DOI: 10.1145/3347318.3355520). Si tienes los partidos en video,
-puedes preparar cada WAV con:
+también puedes generar cada WAV con:
 
 ```bash
 ffmpeg -i partido.mp4 -vn -ac 1 -ar 16000 -sample_fmt s16 videos/V0XX.wav

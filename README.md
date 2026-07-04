@@ -91,3 +91,9 @@ events, stats, rallies, temporal = analyze_new_match("ruta/al/archivo.mp4")
 > WAV en `videos/`. Si solo quieres inspeccionar el pipeline, las anotaciones de `labels/`
 > permiten ejecutar las celdas de carga y de métricas basadas en `points.txt`.
 
+## 5. Nota sobre el uso de IA
+
+Parte del desarrollo de este proyecto (código, documentación y redacción) se apoyó en el
+asistente de IA **Claude** (Anthropic). Las decisiones de diseño, la ejecución de los
+experimentos y la revisión final de los resultados son responsabilidad del autor.
+
